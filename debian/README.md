@@ -30,7 +30,7 @@ npm i n -g
 n stable
 ```
 
-###code
+### code
 
 ```
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
@@ -42,7 +42,7 @@ sudo apt-get update
 sudo apt-get install code # or code-insiders
 ```
 
-####optional
+#### optional
 
 ```
 sudo apt-get install screen
