@@ -46,4 +46,5 @@ sudo apt-get install code # or code-insiders
 
 ```
 sudo apt-get install screen
+gnome-tweak-tool
 ```
