@@ -48,3 +48,17 @@ sudo apt-get install code # or code-insiders
 sudo apt-get install screen
 gnome-tweak-tool
 ```
+
+#### ? Unable to lock the administration directory
+
+```
+sudo rm /var/lib/apt/lists/lock
+sudo rm /var/cache/apt/archives/lock
+sudo rm /var/lib/dpkg/lock
+```
+
+#### ? VM - shared folders location
+
+```
+cd /mnt/hgfs
+```
