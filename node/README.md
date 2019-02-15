@@ -8,13 +8,13 @@ sh setup.sh
 
 ## Postgresql Setup
 
-####windows:
+#### windows:
 
 ```
 https://www.postgresql.org/download/windows/
 ```
 
-####Debian:
+#### Debian:
 
 ```
 emacs /etc/apt/sources.list.d/pgdg.list
@@ -31,7 +31,7 @@ sudo touch .psql_history
 psql
 ```
 
-##Navicat Setup
+## Navicat Setup
 
 ```
 https://www.navicat.com/en/download/navicat-premium
