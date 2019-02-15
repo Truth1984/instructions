@@ -6,6 +6,25 @@
 sh setup.sh
 ```
 
+## MySQL Setup
+
+#### windows:
+
+```
+https://dev.mysql.com/downloads/installer/
+```
+
+#### Debian:
+
+```
+wget http://repo.mysql.com/mysql-apt-config_0.8.9-1_all.deb
+sudo dpkg -i mysql-apt-config_0.8.9-1_all.deb
+sudo apt update
+sudo apt install mysql-server
+sudo systemctl restart mysql
+sudo mysql_secure_installation
+```
+
 ## Postgresql Setup
 
 #### windows:
@@ -31,7 +50,7 @@ sudo touch .psql_history
 psql
 ```
 
-## Navicat Setup
+##Navicat Setup
 
 ```
 https://www.navicat.com/en/download/navicat-premium
