@@ -50,9 +50,33 @@ sudo touch .psql_history
 psql
 ```
 
-##Navicat Setup
+## Navicat Setup
 
 ```
 https://www.navicat.com/en/download/navicat-premium
 https://www.jianshu.com/p/5f693b4c9468
+```
+
+## MySQL
+
+### Password has expired
+
+```
+mysql -u root -p
+ALTER USER `root`@`localhost` IDENTIFIED BY 'password';
+flush privileges;
+```
+
+### reset password
+
+```
+ALTER USER `root`@`localhost` IDENTIFIED BY '';
+flush privileges;
+```
+
+### ER_NOT_SUPPORTED_AUTH_MODE
+
+```
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+flush privileges;
 ```
