@@ -25,6 +25,10 @@ sudo systemctl restart mysql
 sudo mysql_secure_installation
 ```
 
+```
+https://support.rackspace.com/how-to/installing-mysql-server-on-ubuntu/
+```
+
 ## Postgresql Setup
 
 #### windows:
@@ -79,4 +83,24 @@ flush privileges;
 ```
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 flush privileges;
+```
+
+### -u -q not working
+
+```
+sudo mysql -u root
+use mysql;
+update user set plugin='mysql_native_password' where User='root';
+flush privileges;
+```
+
+### remove 
+
+```
+sudo apt-get remove --purge mysql*
+sudo apt-get purge mysql*
+sudo apt-get autoremove.
+sudo apt-get autoclean.
+sudo apt-get remove dbconfig-mysql.
+sudo apt-get install mysql-server.
 ```
