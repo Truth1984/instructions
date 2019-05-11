@@ -57,6 +57,22 @@ sudo apt-get install screen
 gnome-tweak-tool
 ```
 
+#### remote access
+
+```
+[mysql] GRANT ALL PRIVILEGES ON *.* TO 'awada'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;
+
+sudo vi /etc/mysql/mysql.conf.d
+change bind-address from 127.0.0.1 to 0.0.0.0
+
+sudo ufw allow 3306/tcp
+sudo service ufw restart
+
+sudo /etc/init.d/mysql start
+sudo mysqld restart
+sudo service mysql restart
+```
+
 #### ? Unable to lock the administration directory
 
 ```
