@@ -57,6 +57,13 @@ sudo apt-get install screen
 gnome-tweak-tool
 ```
 
+#### kill mysql procecess
+
+```
+mysql> show processlist;
+mysql> kill <process_id>;
+```
+
 #### remote access
 
 ```
