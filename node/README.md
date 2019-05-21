@@ -94,7 +94,7 @@ update user set plugin='mysql_native_password' where User='root';
 flush privileges;
 ```
 
-### remove 
+### remove
 
 ```
 sudo apt-get remove --purge mysql*
@@ -103,4 +103,16 @@ sudo apt-get autoremove.
 sudo apt-get autoclean.
 sudo apt-get remove dbconfig-mysql.
 sudo apt-get install mysql-server.
+```
+
+## NPM
+
+### ACCESS DENIED 
+
+```
+mkdir ~/.npm-global
+npm config set prefix '~/.npm-global'
+emacs ~/.profile
+(add) export PATH=~/.npm-global/bin:$PATH
+source ~/.profile
 ```
