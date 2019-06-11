@@ -50,6 +50,19 @@ sudo apt-get update
 sudo apt-get install code # or code-insiders
 ```
 
+### redis
+
+```
+sudo apt-get install tcl
+wget http://download.redis.io/redis-stable.tar.gz
+tar xvzf redis-stable.tar.gz
+cd redis-stable
+make
+make test
+sudo make install
+redis-cli ping
+```
+
 #### optional
 
 ```
