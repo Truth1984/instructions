@@ -14,13 +14,6 @@ vi /etc/sudoers
 %USER% ALL=(ALL:ALL) ALL
 ```
 
-## dmg
-
-```
-sudo apt install p7zip-full
-7z x file.dmg
-```
-
 ### apt-get install
 
 ```
