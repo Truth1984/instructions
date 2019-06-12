@@ -106,3 +106,11 @@ sudo rm /var/lib/dpkg/lock
 ```
 cd /mnt/hgfs
 ```
+
+##### ? ubuntu boot slow
+
+```
+sudo code /etc/default/grub
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash noresume"
+sudo update-grub
+```
