@@ -107,6 +107,12 @@ sudo apt-get install mysql-server.
 
 ## NPM
 
+### Windows Path
+
+```
+%USERPROFILE%\AppData\Roaming\npm
+```
+
 ### ACCESS DENIED 
 
 ```
