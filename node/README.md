@@ -107,6 +107,14 @@ sudo apt-get install mysql-server.
 
 ## NPM
 
+### Taobao:
+
+```
+npm config set registry https://registry.npm.taobao.org/
+yarn config set registry https://registry.npm.taobao.org -g
+yarn config set sass_binary_site http://cdn.npm.taobao.org/dist/node-sass -g
+```
+
 ### Windows Path
 
 ```
