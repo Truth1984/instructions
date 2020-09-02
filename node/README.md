@@ -104,6 +104,12 @@ sudo apt-get remove dbconfig-mysql
 sudo apt-get install mysql-server
 ```
 
+### backup
+
+```
+sudo mysqldump -h $host --single-transaction --lock-tables=false --quick -u $user -p $password $dbname $dbname2 > $result.sql
+```
+
 ## NPM
 
 ### Taobao:
